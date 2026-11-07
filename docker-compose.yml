@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: surveillance_backend
+    volumes:
+      - ./backend/weights:/app/weights
+    ports:
+      - "8000:8000"
+    environment:
+      - DEVICE=cpu # Or cuda if you have GPU support in Docker
+      - YOLO_MODEL_PATH=weights/yolov8n.pt
+      - BEHAVIOR_MODEL_PATH=weights/suspicious_behavior_model.pth
+      - CLASSES_PATH=weights/classes.txt
+    restart: always
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: surveillance_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: always

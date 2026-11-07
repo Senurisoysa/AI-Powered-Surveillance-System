@@ -13,3 +13,13 @@ __pycache__/
 # Temporary files
 .ipynb_checkpoints/
 *.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local database
+backend/surveillance.db
+
+# Build logs
+frontend-reactjs/build_output.txt

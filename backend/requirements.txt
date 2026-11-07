@@ -1,0 +1,16 @@
+fastapi[all]
+uvicorn[standard]
+python-multipart
+pydantic-settings
+opencv-python-headless
+numpy
+torch
+torchvision
+ultralytics
+asyncio
+websockets
+python-dotenv
+sqlalchemy
+databases[sqlite]
+pytest
+httpx
