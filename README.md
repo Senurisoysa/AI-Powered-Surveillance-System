@@ -30,7 +30,7 @@ This research explores how artificial intelligence and computer vision can assis
 | Object Detection | YOLOv8 |
 | Computer Vision | OpenCV |
 | Backend | FastAPI |
-| Frontend | React, TypeScript |
+| Frontend | React |
 | Build Tool | Vite |
 | Database | SQLite |
 | Containerization | Docker |
