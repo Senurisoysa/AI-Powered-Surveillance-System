@@ -1,0 +1,15 @@
+# Python environments
+backend/venv/
+backend/.venv/
+
+# React dependencies
+frontend-reactjs/node_modules/
+frontend-reactjs/dist/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+.ipynb_checkpoints/
+*.log
